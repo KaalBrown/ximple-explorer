@@ -76,6 +76,6 @@ The preview is currently unsigned, so Windows may show a warning. Keep your secu
 
 The preview is free and has no automatic expiry. I'm planning a **one-time purchase for the final version, with no subscription**. I haven't decided the price or release date yet, and the preview doesn't include a final-version license.
 
-Made by [KaalBrown](https://github.com/KaalBrown) in C++ with native Windows controls, with help from Codex. The icon was made with image-generation tools. This repository is for downloads and feedback; the application source stays private.
+Made by [KaalBrown](https://github.com/KaalBrown) in C++ with native Windows controls. The icon was made with image-generation tools. This repository is for downloads and feedback; the application source stays private.
 
 [Data and network behavior](DATA-AND-NETWORK.md) · [How feedback is handled](FEEDBACK.md)
