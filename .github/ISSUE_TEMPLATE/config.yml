@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Testing guide and known limitations
+    url: https://github.com/KaalBrown/ximple-explorer/blob/main/TESTING.md
+    about: Start here for a short set of tasks to try with disposable files.

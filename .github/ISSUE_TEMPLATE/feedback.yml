@@ -1,0 +1,34 @@
+name: Feedback or feature request
+description: Tell us what helped, what felt awkward or what you could not do.
+title: "[Feedback] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feedback about everyday tasks is especially useful. This form is public;
+        please leave out personal information and private filenames.
+  - type: input
+    id: version
+    attributes:
+      label: Ximple version
+      placeholder: 0.9.12
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What worked, or what would make it better?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Optional context or screenshot
+      description: Include Windows version, display scaling or storage type if relevant.

@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a reproducible problem with the development preview.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing Ximple. Use replaceable files when reproducing a problem.
+        This report is public: remove private filenames, personal data and secrets.
+  - type: input
+    id: app-version
+    attributes:
+      label: Ximple version
+      description: Find this under Help > About.
+      placeholder: 0.9.12
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: Windows version and build
+      description: Find this under Settings > System > About. Include whether the PC is x64.
+      placeholder: Windows 11, version/build, x64
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Copy, move, rename or delete
+        - Crash, freeze or startup
+        - Navigation, tabs or sidebars
+        - Search or Space view
+        - Appearance, mouse, keyboard or accessibility
+        - ZIP browsing or extraction
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Storage, theme and display scaling
+      description: Include only what is relevant. No complete system report is needed.
+      placeholder: Local SSD, dark theme, 150% scaling
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include exact error text and whether files were changed unexpectedly.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Optional screenshot or further details
+      description: Attach a screenshot here if useful. Remove private information first.
