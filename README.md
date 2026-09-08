@@ -2,65 +2,80 @@
 
 # Ximple Explorer
 
-**Two places. One window.**
+I always wanted an explorer with just enough useful features. Windows Explorer felt too simple in some places, and confusing and rigid in others. I missed having two panes, and copying things around often felt slower than it should. But I didn't want something overly complicated either, with a UI that looked like it was still living in the Windows 98 era.
 
-A native file manager for **Windows 11 x64**, with dual-pane navigation, independent tabs and built-in disk-space analysis.
+So I made Ximple. It's the explorer I wanted to use myself.
 
-**Free Development Preview · v0.9.12 · Portable · No signup to download**
+**Free development preview · Windows 11 x64 · Portable · v0.9.12**
 
-[**Download the preview ZIP**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-0.9.12-preview-win11-x64.zip) · [Release notes and checksums](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.12-preview) · [Report a bug or share feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-0.9.12-preview-win11-x64.zip) · [Release notes and checksum](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.12-preview) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
-![Ximple Explorer showing two folder panes and independent tabs in its dark theme](media/dual-pane-dark.png)
+## Two places at once
 
-## A workspace for everyday files
+The dual panels make it easy to drag and drop files between locations. Each panel has its own tabs and its own customizable sidebar, so I can keep different folders and groups handy on each side. I can move those groups around, rename shortcuts, resize the sidebars, or hide them when I want more room.
 
-| Dual-pane navigation | Independent tabs | Understand your disk space |
-|---|---|---|
-| Browse two locations and copy between them in one window. Switch between side-by-side and stacked layouts. | Keep folders available in each pane, with separate navigation history and customizable sidebars. | Inspect folder sizes, file types and large files in the integrated Space view. |
+![Two Ximple panes with independent tabs, sidebars and thumbnail views](media/browse-dual-pane.png)
 
-Ximple also includes recursive filename search, ZIP browsing and extraction, session undo/redo for eligible operations, light/dark themes and optional image thumbnails.
+It comes in dark and light mode, with a customizable accent color. There are different file views, adjustable pane layouts, and color tags for files and folders. I can group files by their color tags or filter a folder to show just one color when I want to focus on a particular set of files.
 
-[**Watch the 24-second feature walkthrough**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-preview-demo.mp4)
+There's also a Recycle Bin view built into the panes. I can look through deleted files and restore them without leaving Ximple.
 
-The walkthrough and screenshots use sample files rendered by the current application. The walkthrough is a sequence of feature demonstrations, not a speed benchmark.
+## A right-click menu I can live with
+
+I was always overwhelmed by cluttered right-click menus. Half the time I was looking through options I never used just to find the one I wanted.
+
+In Ximple, I can choose which built-in file actions show up and change their order. Remove the clutter, move the useful stuff up, and keep the menu the way I like it. The same menu gives me color tagging and the file tools I use regularly.
+
+<p>
+  <img src="media/customize-right-click.png" width="500" alt="Choosing which Ximple right-click actions appear and moving them into a preferred order">
+  <img src="media/right-click-menu.png" width="340" alt="A customized Ximple right-click menu with color labels, file actions and scan options">
+</p>
+
+## File checks from the explorer
+
+I can start a Microsoft Defender scan of the current directory with one click. For a closer look at a file, there's a built-in VirusTotal lookup too. The lookup opens existing reports in the browser and doesn't automatically upload my files.
+
+![Defender scan and VirusTotal lookup buttons in the pane header](media/security-shortcuts.png)
+
+## Finding where the space went
+
+Space view is where I do a bit of detective work. I can scan a directory, see which folders are taking up the most room, and switch to a space map to get a quick picture of where it's all going.
+
+![Space map showing how much room each folder takes up](media/space-map-real.png)
+
+Sometimes I just want the numbers, or to see how much of a folder is made up of documents, images, applications and other file types.
 
 <details>
-<summary>See the light theme and Space view</summary>
+<summary>Folder sizes and file types</summary>
 
-![Ximple Explorer light theme](media/dual-pane-light.png)
+![Folder sizes with file counts and each folder's share of the scanned space](media/space-folder-sizes.png)
 
-![Ximple Explorer Space view inspecting sample folders](media/space-view.png)
+![Space view breaking down storage by file type](media/space-file-types.png)
 
 </details>
 
-## Try the preview
+Ximple can also save complete scans in its history and compare folder sizes between scans. That helps me see what's grown or changed over time, instead of trying to remember what was there last time.
 
-1. Download **XimpleExplorer-0.9.12-preview-win11-x64.zip** from the release linked above. GitHub's automatically generated “Source code” archives contain this documentation, not the application.
-2. Extract the ZIP and open **XimpleExplorer.exe**. No installer, administrator rights or separately installed .NET runtime are required.
-3. Start with copies of files you can replace. Follow the [10-minute testing guide](TESTING.md), then tell us what worked and what got in your way.
+## Small enough to carry around
 
-The current executable is **unsigned**. Windows may display a publisher or reputation warning. Do not disable antivirus or other Windows protections to test it. If security software blocks it, stop and report the product and message shown. A SHA-256 checksum is supplied to check download integrity; it is not a security verdict or a publisher signature.
+There's fast filename search when I need to find something, without setting up a permanent disk index. I wanted the whole thing to stay lightweight and portable.
 
-This is an unfinished development preview. Review the [known limitations](KNOWN-LIMITATIONS.md) before using it. Validation on a separate clean Windows 11 installation is still pending.
+In my everyday use, I've seen it run at around **7 MB of memory**. That varies with what it's doing; scans, thumbnails and larger folders can use more. The app itself is roughly **2.3 MiB**, and the current ZIP download is about **1.2 MB**. Extract it and run it. No installer or separate .NET runtime needed.
 
-## Help shape the final release
+[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
 
-I'm looking for the first **20–50 people** willing to try Ximple and share practical feedback. Navigation, copying, renaming, search and Space view are the most useful places to start.
+## Give it a try
 
-- [Report a reproducible bug](https://github.com/KaalBrown/ximple-explorer/issues/new?template=bug-report.yml).
-- [Share usability feedback or a feature request](https://github.com/KaalBrown/ximple-explorer/issues/new?template=feedback.yml).
-- Comments on my community announcement posts are welcome too. GitHub requires an account to submit an issue; downloading Ximple does not.
+This is still a development preview, and I'm looking for people to use it and tell me what feels good, what's confusing, and what breaks. I'd rather hear about an annoying everyday problem than guess what everyone needs.
 
-Please include your Ximple version, Windows version, the steps you took, what you expected and what happened. Screenshots are optional. Remove private filenames, personal details and secrets before posting. File-operation failures and crashes take priority over new features; the [feedback guide](FEEDBACK.md) explains how reports are handled.
+Download **XimpleExplorer-0.9.12-preview-win11-x64.zip**, extract it, and open **XimpleExplorer.exe**. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
 
-## Free preview, planned one-time purchase
+The preview is currently unsigned, so Windows may show a warning. Keep your security protections on, and report it if the app is blocked. Start with copies of files you can replace. The [testing guide](TESTING.md) has a few things to try, and the [known limitations](KNOWN-LIMITATIONS.md) cover the rough edges. A separate clean Windows 11 test is still pending.
 
-The preview is free to download and test. The final product is planned as a small **one-time purchase, with no subscription**; the price and release date have not been set. The current preview has no automatic expiry. It does not include a promise of a free final-version license.
+[Report a bug or leave feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose), or reply wherever you found my announcement. Tell me your Ximple and Windows versions, what you tried, and what happened. Screenshots help, but aren't required.
 
-## About this repository
+The preview is free and has no automatic expiry. I'm planning a **one-time purchase for the final version, with no subscription**. I haven't decided the price or release date yet, and the preview doesn't include a final-version license.
 
-This is the official download and feedback repository maintained by [KaalBrown](https://github.com/KaalBrown). It contains public documentation and media, not the application's source code. Making these downloads available does not make the application open source.
+Made by [KaalBrown](https://github.com/KaalBrown) in C++ with native Windows controls, with help from Codex. The icon was made with image-generation tools. This repository is for downloads and feedback; the application source stays private.
 
-Ximple is built in C++ using native Windows controls. Development and the application icon were assisted by OpenAI Codex and image-generation tools. Testing performed during development does not replace independent testing on other computers.
-
-See [data and network behavior](DATA-AND-NETWORK.md), [known limitations](KNOWN-LIMITATIONS.md) and the third-party notices and licenses included in every download.
+[Data and network behavior](DATA-AND-NETWORK.md) · [How feedback is handled](FEEDBACK.md)
