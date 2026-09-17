@@ -8,7 +8,7 @@ So I made Ximple. It's the explorer I wanted to use myself.
 
 **Free development preview · Windows 11 x64 · Portable · v0.9.12**
 
-[**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-0.9.12-preview-win11-x64.zip) · [Release notes and checksum](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.12-preview) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.13) · [Release notes and checksum](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.13-preview) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
 ## Two places at once
 
