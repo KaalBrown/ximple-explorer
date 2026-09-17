@@ -6,7 +6,7 @@ I always wanted an explorer with just enough useful features. Windows Explorer f
 
 So I made Ximple. It's the explorer I wanted to use myself.
 
-**Free development preview · Windows 11 x64 · Portable · v0.9.12**
+**Free development preview · Windows 11 x64 · Portable · v0.9.13**
 
 [**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.13/XimpleExplorer.exe) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
@@ -62,13 +62,13 @@ There's fast filename search when I need to find something, without setting up a
 
 In my everyday use, I've seen it run at around **7 MB of memory**. That varies with what it's doing; scans, thumbnails and larger folders can use more. The app itself is roughly **2.3 MiB**, and the current ZIP download is about **1.2 MB**. Extract it and run it. No installer or separate .NET runtime needed.
 
-[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
+[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.13-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
 
 ## Give it a try
 
 This is still a development preview, and I'm looking for people to use it and tell me what feels good, what's confusing, and what breaks. I'd rather hear about an annoying everyday problem than guess what everyone needs.
 
-Download **XimpleExplorer-0.9.12-preview-win11-x64.zip**, extract it, and open **XimpleExplorer.exe**. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
+Download **XimpleExplorer-0.9.13-preview-win11-x64.zip**, extract it, and open **XimpleExplorer.exe**. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
 
 The preview is currently unsigned, so Windows may show a warning. Keep your security protections on, and report it if the app is blocked. Start with copies of files you can replace. The [testing guide](TESTING.md) has a few things to try, and the [known limitations](KNOWN-LIMITATIONS.md) cover the rough edges. A separate clean Windows 11 test is still pending.
 
