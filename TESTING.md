@@ -4,14 +4,14 @@ Use Windows 11 on an x64 PC. Start with disposable copies of your files, and kee
 
 ## 1. Download and open
 
-Download the ZIP and its `.sha256` file from the [preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.12-preview). Extract the ZIP into a normal local folder and run `XimpleExplorer.exe` beside its documentation and licenses.
+Download the ZIP and its `.sha256` file from the [0.9.13 preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.13). Extract the ZIP into a normal local folder and run `XimpleExplorer.exe` beside its documentation and licenses.
 
 The publisher is currently unsigned. Leave Windows security protections enabled. If your system blocks the application, report the warning rather than disabling protection.
 
 Optional download-integrity check in PowerShell, from the folder containing the ZIP:
 
 ```powershell
-Get-FileHash -LiteralPath '.\XimpleExplorer-0.9.12-preview-win11-x64.zip' -Algorithm SHA256
+Get-FileHash -LiteralPath '.\XimpleExplorer-0.9.13-preview-win11-x64.zip' -Algorithm SHA256
 ```
 
 Compare the result with the accompanying checksum file. A matching checksum confirms integrity, not that the program is safe.
@@ -25,7 +25,9 @@ Create two folders named `Ximple Test A` and `Ximple Test B`. Put copies of a fe
 | Task | What to check |
 |---|---|
 | Browse folders, then use Back, Forward and Up | Locations and selections remain understandable. |
-| Open and switch tabs in both panes | Each pane retains its own folders and navigation. |
+| Open, close, reopen and switch tabs in both panes, including folders with images or videos | Tab changes stay responsive and each pane retains its own folders and navigation. |
+| Focus a file list and type the beginning of a name | Selection jumps to the matching file or folder and wraps through the list. |
+| In Folder icons or Thumbnails, right-click the background and change Sort by | Name, date, type, size and ascending/descending choices reorder the visible items. |
 | Switch between side-by-side and stacked panes | Controls and filenames remain readable. |
 | Copy sample files from A into B | Originals remain in A; copies open correctly in B. |
 | Copy the same names again | Conflict choices are clear and the chosen result is correct. |

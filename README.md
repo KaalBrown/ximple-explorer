@@ -8,11 +8,13 @@ So I made Ximple. It's the explorer I wanted to use myself.
 
 **Free development preview · Windows 11 x64 · Portable · v0.9.13**
 
-[**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.13/XimpleExplorer.exe) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download Ximple**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.13/XimpleExplorer-0.9.13-preview-win11-x64.zip) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.13) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
 ## Two places at once
 
 The dual panels make it easy to drag and drop files between locations. Each panel has its own tabs and its own customizable sidebar, so I can keep different folders and groups handy on each side. I can move those groups around, rename shortcuts, resize the sidebars, or hide them when I want more room.
+
+Tabs keep recently loaded folders ready, including image and video previews, so opening, closing, reopening and switching tabs feels immediate. Larger superseded folder listings are released in the background instead of delaying the next folder.
 
 ![Two Ximple panes with independent tabs, sidebars and thumbnail views](media/browse-dual-pane.png)
 
@@ -56,13 +58,13 @@ Sometimes I just want the numbers, or to see how much of a folder is made up of 
 
 Ximple can also save complete scans in its history and compare folder sizes between scans. That helps me see what's grown or changed over time, instead of trying to remember what was there last time.
 
-## Small enough to carry around
+## Fast and portable
 
-There's fast filename search when I need to find something, without setting up a permanent disk index. I wanted the whole thing to stay lightweight and portable.
+There's fast filename search when I need to find something, without setting up a permanent disk index. When a file list is focused, I can start typing to jump straight to a matching file or folder. Folder icon and thumbnail views can be sorted by name, date, type or size.
 
-In my everyday use, I've seen it run at around **7 MB of memory**. That varies with what it's doing; scans, thumbnails and larger folders can use more. The app itself is roughly **2.3 MiB**, and the current ZIP download is about **1.2 MB**. Extract it and run it. No installer or separate .NET runtime needed.
+Ximple deliberately keeps more recently used tab and preview data in memory to make navigation faster. Usage varies with open tabs, folder size, thumbnails and scans. The app itself is roughly **2.3 MiB**, and the current ZIP download is about **1.2 MB**. Extract it and run it. No installer or separate .NET runtime needed.
 
-[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.13-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
+[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
 
 ## Give it a try
 
