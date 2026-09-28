@@ -1,6 +1,6 @@
 # Development preview: known limitations
 
-Current preview: **0.9.13**.
+Current preview: **0.9.14**.
 
 - **Windows 11 x64 only.** Windows 10 and native ARM64 support have not been established.
 - **Unsigned portable executable.** No signed installer is included. Windows or security software may warn or block it.
@@ -10,6 +10,7 @@ Current preview: **0.9.13**.
 - **Search is by filename and metadata.** There is no file-content search or permanent whole-disk index. Capped, incomplete and provisional results are labelled in the app.
 - **ZIP browsing has limits.** Archive members cannot be renamed or edited in place. Some archive formats and encrypted archives are unsupported; extraction is separate from ordinary folder editing.
 - **Cloud and network behavior varies by provider.** Thumbnail and individual-icon loading is restricted for certain cloud/network/offline items to avoid fetching file contents just for display. Broader provider testing is still needed.
+- **Device browsing depends on Windows and its providers.** Phones must be connected, unlocked and exposed by a supported Windows file provider. A nearby wireless device is not necessarily browsable. Connection state, permissions and provider support affect availability; some filesystem actions are unavailable in virtual device locations.
 - **Space scans are snapshots.** Results can become outdated after other applications change files. Partial totals and scan limits are labelled; file links can be skipped.
 - **Security integrations are not safety guarantees.** Defender scans and VirusTotal report links require their respective Windows/service capabilities. An existing VirusTotal report is not a new scan. Ximple does not automatically upload files to VirusTotal.
 - **Accessibility and unusual display configurations need more testing.** Feedback from keyboard, screen-reader and high-scaling users is welcome.

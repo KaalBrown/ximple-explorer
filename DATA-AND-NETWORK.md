@@ -1,10 +1,11 @@
 # Data and network behavior
 
-This describes the **0.9.13 development preview**, not a promise about unimplemented future services.
+This describes the **0.9.14 development preview**, not a promise about unimplemented future services.
 
 - No application telemetry or automatic crash-report submission is implemented.
 - Settings are stored locally under `%LOCALAPPDATA%\XimpleExplorer`. They can include folder paths, tabs, pins, color labels and preferences. Scan history stores folder paths and totals locally.
 - Browsing network shares and cloud-provider folders, or opening files in another app, may cause Windows, the provider or that app to access the network.
+- The Network and Connected devices sections show locations published by Windows and its file providers. Device discovery runs in the background, and **View > Refresh devices** retries it. Ximple does not discover arbitrary nearby Wi-Fi or Bluetooth devices. Accessing a published location may involve its provider and, for network locations, network traffic.
 - Microsoft Defender scanning invokes the installed Windows capability. Defender and Windows Security have their own behavior and settings.
 - VirusTotal lookup calculates a SHA-256 fingerprint locally. Opening a report sends that fingerprint to VirusTotal through your browser. Folder lookup prepares fingerprints locally; report links are opened when selected.
 - Ximple does not automatically upload files to VirusTotal. Choosing a manual upload on its website, including dropping a file onto that site, sends the file through the browser.
