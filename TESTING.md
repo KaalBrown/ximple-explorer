@@ -4,7 +4,7 @@ Use Windows 11 on an x64 PC. Start with disposable copies of your files, and kee
 
 ## 1. Download and open
 
-Download `XimpleExplorer.exe` and `XimpleExplorer.exe.sha256` from the [0.9.15 preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.15). Save the executable to a normal local folder and run it. No installer is needed.
+Download `XimpleExplorer.exe` and `XimpleExplorer.exe.sha256` from the [0.9.16 preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16). Save the executable to a normal local folder and run it. No installer is needed.
 
 The publisher is currently unsigned. Leave Windows security protections enabled. If your system blocks the application, report the warning rather than disabling protection.
 
@@ -27,6 +27,9 @@ Create two folders named `Ximple Test A` and `Ximple Test B`. Put copies of a fe
 | Browse folders, then use Back, Forward and Up | Locations and selections remain understandable. |
 | Open, close, reopen and switch tabs in both panes, including folders with images or videos | Tab changes stay responsive and each pane retains its own folders and navigation. |
 | Drag a tab from one pane's tab bar to a position in the other pane's tab bar | The insertion marker shows the destination; the tab arrives with its folder and navigation history. Moving the only tab leaves a fresh tab in the source pane. A pane already holding ten tabs rejects another. |
+| Choose Help > Add Ximple to Start menu..., then find Ximple Explorer under Start > All apps | Its shortcut opens the managed app, and Windows offers Pin to Start on the shortcut. Pinning remains your choice. |
+| Check a fresh sidebar for Pictures, Music and Videos | The folders appear with Desktop, Downloads and Documents. Existing custom sidebar shortcuts stay unchanged. |
+| Right-click a sample file or folder and choose Create shortcut | A working `.lnk` appears beside it. Repeating the action makes another name and does not overwrite the first shortcut. |
 | Focus a file list and type the beginning of a name | Selection jumps to the matching file or folder and wraps through the list. |
 | In Folder icons or Thumbnails, right-click the background and change Sort by | Name, date, type, size and ascending/descending choices reorder the visible items. |
 | Switch between side-by-side and stacked panes | Controls and filenames remain readable. |
@@ -73,6 +76,9 @@ EXE downloaded and app launched:
 Any Windows/security warning (exact wording):
 Navigation and tabs:
 Tab drag between panes:
+Start menu shortcut and Pin to Start:
+Default sidebar folders:
+Create shortcut:
 Copy and conflict handling:
 Rename with mouse / Enter / Escape:
 Search and Space view:

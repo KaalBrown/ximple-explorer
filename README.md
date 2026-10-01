@@ -6,13 +6,15 @@ I always wanted an explorer with just enough useful features. Windows Explorer f
 
 So I made Ximple. It's the explorer I wanted to use myself.
 
-**Free development preview · Windows 11 x64 · Portable · v0.9.15**
+**Free development preview · Windows 11 x64 · Portable · v0.9.16**
 
-[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.15/XimpleExplorer.exe) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.15) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.16/XimpleExplorer.exe) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
 ## Two places at once
 
 The dual panels make it easy to drag and drop files between locations. Each panel has its own tabs and its own customizable sidebar, so I can keep different folders and groups handy on each side. I can move those groups around, rename shortcuts, resize the sidebars, or hide them when I want more room.
+
+Fresh sidebars include Desktop, Downloads, Documents, Pictures, Music and Videos at their Windows locations. Existing custom shortcuts stay as they are.
 
 This PC now includes Windows-published network and connected devices alongside drives and registered WSL distributions. Open supported locations in either pane with tabs and familiar navigation. Right-click **This PC** in a sidebar to show or hide **Network** and **Connected devices** independently; each sidebar remembers its choices. Availability depends on Windows, the device provider, connection state and permissions.
 
@@ -25,6 +27,8 @@ Drag a tab from one pane's tab bar into the other pane's tab bar to move that fo
 It comes in dark and light mode, with a customizable accent color. There are different file views, adjustable pane layouts, and color tags for files and folders. I can group files by their color tags or filter a folder to show just one color when I want to focus on a particular set of files.
 
 There's also a Recycle Bin view built into the panes. I can look through deleted files and restore them without leaving Ximple.
+
+To find Ximple in Start, choose **Help > Add Ximple to Start menu...**. That makes a durable copy and a shortcut under Start > All apps; from there, I can right-click **Ximple Explorer** and choose **Pin to Start**. Running the Help action again from a newer preview updates the shortcut. I can also right-click ordinary files or folders and choose **Create shortcut** to add a Windows shortcut beside each one.
 
 ## A right-click menu I can live with
 
@@ -72,7 +76,7 @@ Ximple deliberately keeps more recently used tab and preview data in memory to m
 
 This is still a development preview, and I'm looking for people to use it and tell me what feels good, what's confusing, and what breaks. I'd rather hear about an annoying everyday problem than guess what everyone needs.
 
-Download **XimpleExplorer.exe** from the [0.9.15 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.15), save it to a normal local folder, and open it. The release also has a `.sha256` checksum file for checking the download. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
+Download **XimpleExplorer.exe** from the [0.9.16 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16), save it to a normal local folder, and open it. The release also has a `.sha256` checksum file for checking the download. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
 
 The preview is currently unsigned, so Windows may show a warning. Keep your security protections on, and report it if the app is blocked. Start with copies of files you can replace. The [testing guide](TESTING.md) has a few things to try, and the [known limitations](KNOWN-LIMITATIONS.md) cover the rough edges. A separate clean Windows 11 test is still pending.
 

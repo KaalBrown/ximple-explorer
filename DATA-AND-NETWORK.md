@@ -1,9 +1,10 @@
 # Data and network behavior
 
-This describes the **0.9.15 development preview**, not a promise about unimplemented future services.
+This describes the **0.9.16 development preview**, not a promise about unimplemented future services.
 
 - No application telemetry or automatic crash-report submission is implemented.
 - Settings are stored locally under `%LOCALAPPDATA%\XimpleExplorer`. They can include folder paths, tabs, pins, color labels and preferences. Scan history stores folder paths and totals locally.
+- Choosing **Help > Add Ximple to Start menu...** keeps a local managed copy under `%LOCALAPPDATA%\XimpleExplorer\Application` and creates a shortcut in the current user's Start menu. Windows leaves the actual Start pin to the user.
 - Browsing network shares and cloud-provider folders, or opening files in another app, may cause Windows, the provider or that app to access the network.
 - The Network and Connected devices sections show locations published by Windows and its file providers. Device discovery runs in the background, and **View > Refresh devices** retries it. Ximple does not discover arbitrary nearby Wi-Fi or Bluetooth devices. Accessing a published location may involve its provider and, for network locations, network traffic.
 - Microsoft Defender scanning invokes the installed Windows capability. Defender and Windows Security have their own behavior and settings.
