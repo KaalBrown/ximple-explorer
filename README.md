@@ -6,9 +6,9 @@ I always wanted an explorer with just enough useful features. Windows Explorer f
 
 So I made Ximple. It's the explorer I wanted to use myself.
 
-**Free development preview · Windows 11 x64 · Portable · v0.9.14**
+**Free development preview · Windows 11 x64 · Portable · v0.9.15**
 
-[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.14/XimpleExplorer.exe) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.14) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.15/XimpleExplorer.exe) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.15) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
 
 ## Two places at once
 
@@ -17,6 +17,8 @@ The dual panels make it easy to drag and drop files between locations. Each pane
 This PC now includes Windows-published network and connected devices alongside drives and registered WSL distributions. Open supported locations in either pane with tabs and familiar navigation. Right-click **This PC** in a sidebar to show or hide **Network** and **Connected devices** independently; each sidebar remembers its choices. Availability depends on Windows, the device provider, connection state and permissions.
 
 Tabs keep recently loaded folders ready, including image and video previews, so opening, closing, reopening and switching tabs feels immediate. Larger superseded folder listings are released in the background instead of delaying the next folder.
+
+Drag a tab from one pane's tab bar into the other pane's tab bar to move that folder and its tab history across. An insertion marker shows where the tab will land. If you move a pane's only tab, Ximple leaves a fresh tab at its current folder; a pane with ten tabs cannot accept another.
 
 ![Two Ximple panes with independent tabs, sidebars and thumbnail views](media/browse-dual-pane.png)
 
@@ -66,13 +68,11 @@ There's fast filename search when I need to find something, without setting up a
 
 Ximple deliberately keeps more recently used tab and preview data in memory to make navigation faster. Usage varies with open tabs, folder size, thumbnails and scans. The standalone app is about **2.5 MiB**. Download it to a normal local folder and run it. No installer or separate .NET runtime is needed.
 
-[Watch the short feature walkthrough](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.12-preview/XimpleExplorer-preview-demo.mp4). The video uses sample files; the screenshots here are from my own setup.
-
 ## Give it a try
 
 This is still a development preview, and I'm looking for people to use it and tell me what feels good, what's confusing, and what breaks. I'd rather hear about an annoying everyday problem than guess what everyone needs.
 
-Download **XimpleExplorer.exe** from the [0.9.14 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.14), save it to a normal local folder, and open it. The release also has a `.sha256` checksum file for checking the download. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
+Download **XimpleExplorer.exe** from the [0.9.15 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.15), save it to a normal local folder, and open it. The release also has a `.sha256` checksum file for checking the download. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
 
 The preview is currently unsigned, so Windows may show a warning. Keep your security protections on, and report it if the app is blocked. Start with copies of files you can replace. The [testing guide](TESTING.md) has a few things to try, and the [known limitations](KNOWN-LIMITATIONS.md) cover the rough edges. A separate clean Windows 11 test is still pending.
 
