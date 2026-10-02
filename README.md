@@ -6,9 +6,11 @@ I always wanted an explorer with just enough useful features. Windows Explorer f
 
 So I made Ximple. It's the explorer I wanted to use myself.
 
-**Free development preview · Windows 11 x64 · Portable · v0.9.16**
+**Free development preview · Windows 11 x64 · Portable · v0.9.17**
 
-[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.16/XimpleExplorer.exe) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+[**Download XimpleExplorer.exe**](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.17/XimpleExplorer.exe) · [Portable ZIP](https://github.com/KaalBrown/ximple-explorer/releases/download/v0.9.17/XimpleExplorer-0.9.17-preview-win11-x64.zip) · [Release notes](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.17) · [Bugs and feedback](https://github.com/KaalBrown/ximple-explorer/issues/new/choose)
+
+Version 0.9.17 fixes stale columns and duplicated text when opening or closing a sidebar. Menus avoid repeated work for large selections, view changes keep reusable thumbnails, and closing a search returns to the original folder immediately while it checks for changes in the background.
 
 ## Two places at once
 
@@ -23,6 +25,8 @@ Tabs keep recently loaded folders ready, including image and video previews, so 
 Drag a tab from one pane's tab bar into the other pane's tab bar to move that folder and its tab history across. An insertion marker shows where the tab will land. If you move a pane's only tab, Ximple leaves a fresh tab at its current folder; a pane with ten tabs cannot accept another.
 
 ![Two Ximple panes with independent tabs, sidebars and thumbnail views](media/browse-dual-pane.png)
+
+The current header puts tabs, the sidebar toggle and a **Folder** menu together, with navigation and filtering below. The compact footer keeps **Browse**, **Space view**, **Edit**, **View** and **Help** accessible. Use **Edit > Preferences** for behavior choices and **View > Pane layout** or **View > Appearance** for the layout, theme and accent. The shorter header and footer return 40 logical pixels to the working area. Some screenshots here show earlier preview layouts.
 
 It comes in dark and light mode, with a customizable accent color. There are different file views, adjustable pane layouts, and color tags for files and folders. I can group files by their color tags or filter a folder to show just one color when I want to focus on a particular set of files.
 
@@ -43,9 +47,7 @@ In Ximple, I can choose which built-in file actions show up and change their ord
 
 ## File checks from the explorer
 
-I can start a Microsoft Defender scan of the current directory with one click. For a closer look at a file, there's a built-in VirusTotal lookup too. The lookup opens existing reports in the browser and doesn't automatically upload my files.
-
-![Defender scan and VirusTotal lookup buttons in the pane header](media/security-shortcuts.png)
+The **Folder** menu in either pane includes **Scan folder with Microsoft Defender** and **Look up folder on VirusTotal (no upload)**. For a closer look at selected files, the right-click menu has the same checks. VirusTotal lookup opens existing reports in the browser and doesn't automatically upload my files.
 
 ## Finding where the space went
 
@@ -76,7 +78,7 @@ Ximple deliberately keeps more recently used tab and preview data in memory to m
 
 This is still a development preview, and I'm looking for people to use it and tell me what feels good, what's confusing, and what breaks. I'd rather hear about an annoying everyday problem than guess what everyone needs.
 
-Download **XimpleExplorer.exe** from the [0.9.16 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16), save it to a normal local folder, and open it. The release also has a `.sha256` checksum file for checking the download. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
+Download **XimpleExplorer.exe** from the [0.9.17 release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.17), save it to a normal local folder, and open it. Alternatively, download the portable ZIP, extract it and open **XimpleExplorer.exe** beside **RELEASE-NOTES.md**. The release has `.sha256` checksum files for both downloads. GitHub's automatic “Source code” downloads contain this documentation, not the app. No signup is needed to download.
 
 The preview is currently unsigned, so Windows may show a warning. Keep your security protections on, and report it if the app is blocked. Start with copies of files you can replace. The [testing guide](TESTING.md) has a few things to try, and the [known limitations](KNOWN-LIMITATIONS.md) cover the rough edges. A separate clean Windows 11 test is still pending.
 

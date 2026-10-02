@@ -1,6 +1,6 @@
 # Data and network behavior
 
-This describes the **0.9.16 development preview**, not a promise about unimplemented future services.
+This describes the **0.9.17 development preview**, not a promise about unimplemented future services.
 
 - No application telemetry or automatic crash-report submission is implemented.
 - Settings are stored locally under `%LOCALAPPDATA%\XimpleExplorer`. They can include folder paths, tabs, pins, color labels and preferences. Scan history stores folder paths and totals locally.

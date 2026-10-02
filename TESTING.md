@@ -4,7 +4,9 @@ Use Windows 11 on an x64 PC. Start with disposable copies of your files, and kee
 
 ## 1. Download and open
 
-Download `XimpleExplorer.exe` and `XimpleExplorer.exe.sha256` from the [0.9.16 preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.16). Save the executable to a normal local folder and run it. No installer is needed.
+Download `XimpleExplorer.exe` and `XimpleExplorer.exe.sha256` from the [0.9.17 preview release](https://github.com/KaalBrown/ximple-explorer/releases/tag/v0.9.17). Save the executable to a normal local folder and run it. No installer is needed.
+
+The release also includes `XimpleExplorer-0.9.17-preview-win11-x64.zip` and its checksum. Extract the ZIP and open `XimpleExplorer.exe`; the folder includes release notes and licenses.
 
 The publisher is currently unsigned. Leave Windows security protections enabled. If your system blocks the application, report the warning rather than disabling protection.
 
@@ -26,6 +28,9 @@ Create two folders named `Ximple Test A` and `Ximple Test B`. Put copies of a fe
 |---|---|
 | Browse folders, then use Back, Forward and Up | Locations and selections remain understandable. |
 | Open, close, reopen and switch tabs in both panes, including folders with images or videos | Tab changes stay responsive and each pane retains its own folders and navigation. |
+| Open and close both sidebars repeatedly in List, Folder icons and Thumbnails | The file list repaints cleanly without duplicated columns or text. Selection and thumbnail artwork remain available. |
+| Open and close Edit, View, Folder and right-click menus | Related commands are easy to find; menus remain responsive with large selections. |
+| Switch between List, Folder icons and Thumbnails, then choose the current view again | The folder remains usable and reusable thumbnail artwork is retained. |
 | Drag a tab from one pane's tab bar to a position in the other pane's tab bar | The insertion marker shows the destination; the tab arrives with its folder and navigation history. Moving the only tab leaves a fresh tab in the source pane. A pane already holding ten tabs rejects another. |
 | Choose Help > Add Ximple to Start menu..., then find Ximple Explorer under Start > All apps | Its shortcut opens the managed app, and Windows offers Pin to Start on the shortcut. Pinning remains your choice. |
 | Check a fresh sidebar for Pictures, Music and Videos | The folders appear with Desktop, Downloads and Documents. Existing custom sidebar shortcuts stay unchanged. |
@@ -40,6 +45,7 @@ Create two folders named `Ximple Test A` and `Ximple Test B`. Put copies of a fe
 | Copy the same names again | Conflict choices are clear and the chosen result is correct. |
 | Rename a sample file with F2 | The pointer becomes an I-beam; clicking positions the caret; dragging selects text. Enter confirms, Escape cancels, and the confirmed new name appears promptly. |
 | Search subfolders for a filename | Expected matches appear; opening a result reaches the correct file. |
+| Close a search and return to its original folder | Original filters, selection and scroll return promptly; later folder changes appear after the background refresh. |
 | Scan the sample workspace in Space view | Folder totals and categories make sense; opening a location works. |
 | Switch themes and try your normal display scaling | Text, icons, selection and rename fields remain readable. |
 | Close and reopen Ximple | Open folder paths, tabs and your chosen preferences return. |

@@ -1,6 +1,6 @@
 # Development preview: known limitations
 
-Current preview: **0.9.16**.
+Current preview: **0.9.17**.
 
 - **Windows 11 x64 only.** Windows 10 and native ARM64 support have not been established.
 - **Unsigned portable executable.** No signed installer is included. Windows or security software may warn or block it.

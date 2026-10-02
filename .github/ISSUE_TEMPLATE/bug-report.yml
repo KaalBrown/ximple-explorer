@@ -13,7 +13,7 @@ body:
     attributes:
       label: Ximple version
       description: Find this under Help > About.
-      placeholder: 0.9.16
+      placeholder: 0.9.17
     validations:
       required: true
   - type: input

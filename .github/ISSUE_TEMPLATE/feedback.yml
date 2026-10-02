@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Ximple version
-      placeholder: 0.9.16
+      placeholder: 0.9.17
     validations:
       required: true
   - type: textarea
